@@ -35,6 +35,7 @@
             </div>
         </div>
     </div>
+<div *ngFor="let repo of repos">
     <div class="panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Repos</h3>
@@ -42,7 +43,7 @@
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-12">
-                    <div *ngFor="let repo of repos">
+ 
                         <div class="row">
                             <div class="col-md-9">
                                 <h4><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></h4>
@@ -50,7 +51,7 @@
 
                             </div>
                             <div class="col-md-3">
-                                    <span type="button" class="label label-warning">Forks{{repo.forks}}</span>
+                                    <span type="button" class="label label-warning">{{repo.forks}} Forks</span>
                             </div>
                         </div>
                     </div>
@@ -59,5 +60,4 @@
         </div>
         <hr>
     </div>
-
 </div>
