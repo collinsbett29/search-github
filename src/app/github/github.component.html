@@ -19,9 +19,9 @@
                 </div>
                 <div class="col-md-8">
                     <div class="stats">
-                    <span class = "label label-primary">{{user.public_repos}} Public Repos</span>
-                    <span class = "label label-success">{{user.public_followers}} Followers</span>
-                    <span class = "label label-info">{{user.public_following}} Following</span>
+                    <button class = "btn btn-primary">Public Repos {{user.public_repos}}</button>
+                    <button class = "btn btn-success">{{user.public_followers}} Followers</button>
+                    <button class = "btn btn-info">{{user.public_following}} Following</button>
                     </div>
                      <br>
                      <ul class="list-group">
@@ -51,7 +51,7 @@
 
                             </div>
                             <div class="col-md-3">
-                                    <span type="button" class="label label-warning">{{repo.forks}} Forks</span>
+                                    <span type="button" class="btn btn-warning">{{repo.forks}} Forks</span>
                             </div>
                         </div>
                     </div>
