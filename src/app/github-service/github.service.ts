@@ -27,10 +27,8 @@ export class GithubService {
      .pipe(map(res => res));
   }
 
-  updateUsername(username:any){
+  updateUsername(username:string){
     this.username = username;
-
-
   }
 
    
