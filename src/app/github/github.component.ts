@@ -17,7 +17,6 @@ export class GithubComponent implements OnInit {
 
     search(username){
       this._githubService.updateUsername(this.username);
-      
       this._githubService.getUser(username).subscribe(user => {
         // console.log(user);
         this.user = user;
@@ -30,12 +29,12 @@ export class GithubComponent implements OnInit {
    }
 
   ngOnInit() {
-    this._githubService.getUser('username').subscribe(user => {
+    this._githubService.getUser('collinsbett29').subscribe(user => {
       console.log(user);
       this.user = user;
     });
 
-    this._githubService.getRepos('username').subscribe(repos => {
+    this._githubService.getRepos('collinsbett29').subscribe(repos => {
         console.log(repos);
         this.repos = repos;
        });
