@@ -30,6 +30,7 @@ export class GithubService {
   updateUsername(username:string){
     this.username = username;
 
+
   }
 
    
