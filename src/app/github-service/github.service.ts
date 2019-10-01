@@ -16,7 +16,7 @@ export class GithubService {
    }
 
    getUser(username){
-     console.log(username);
+    console.log(username);
       return this._http.get('https://api.github.com/users/' + username)
       .pipe(map(res => res));
    }
@@ -27,7 +27,7 @@ export class GithubService {
      .pipe(map(res => res));
   }
 
-  updateUsername(username:string){
+  updateUsername(username:any){
     this.username = username;
 
 
